@@ -19,20 +19,34 @@
             display: block;
             opacity: 1;
         }
+        .golden-text {
+            color: #d4af37; /* A rich golden color */
+        }
+        .golden-border {
+            border-color: #d4af37;
+        }
+        .golden-bg {
+            background-color: #d4af37;
+        }
+        .golden-hover:hover {
+            background-color: #c09f2e;
+        }
     </style>
 </head>
 <body class="bg-gray-900 min-h-screen flex flex-col items-center">
 
     <!-- Header and Navigation -->
     <header class="w-full bg-gray-800 shadow-lg rounded-xl mt-4 max-w-6xl mx-auto p-4 flex flex-col md:flex-row justify-between items-center z-10">
-        <h1 class="text-3xl font-bold text-yellow-400">
-            <a href="#willkommen" class="hover:text-yellow-300 transition-colors duration-300">Los Santos Golf Club</a>
+        <h1 class="text-3xl font-bold golden-text">
+            <a href="#willkommen" class="hover:golden-text transition-colors duration-300">Los Santos Golf Club</a>
         </h1>
-        <nav class="mt-4 md:mt-0">
-            <ul class="flex space-x-4">
-                <li><a href="#mitgliedschaft" data-target="mitgliedschaft" class="nav-link text-gray-300 hover:text-yellow-400 transition-colors duration-300">Zugang & Mitgliedschaft</a></li>
-                <li><a href="#hausordnung" data-target="hausordnung" class="nav-link text-gray-300 hover:text-yellow-400 transition-colors duration-300">Hausordnung</a></li>
-                <li><a href="#kontakt" data-target="kontakt" class="nav-link text-gray-300 hover:text-yellow-400 transition-colors duration-300">Kontakt</a></li>
+        <nav class="mt-4 md:mt-0 flex-grow flex justify-end">
+            <ul class="flex space-x-4 items-center">
+                <li><a href="#willkommen" data-target="willkommen" class="nav-link text-gray-300 hover:golden-text transition-colors duration-300">Home</a></li>
+                <li><a href="#mitgliedschaft" data-target="mitgliedschaft" class="nav-link text-gray-300 hover:golden-text transition-colors duration-300">Zugang & Mitgliedschaft</a></li>
+                <li><a href="#hausordnung" data-target="hausordnung" class="nav-link text-gray-300 hover:golden-text transition-colors duration-300">Hausordnung</a></li>
+                <li><a href="#staff" data-target="staff" class="nav-link text-gray-300 hover:golden-text transition-colors duration-300">Mitarbeiter</a></li>
+                <li><a href="#kontakt" data-target="kontakt" class="nav-link text-gray-300 hover:golden-text transition-colors duration-300">Kontakt</a></li>
             </ul>
         </nav>
     </header>
@@ -55,9 +69,27 @@
             
             <!-- Membership Options -->
             <div class="grid md:grid-cols-2 gap-8">
+                <!-- Founding Members -->
+                <div class="bg-gray-700 p-6 rounded-lg shadow-inner border-l-4 golden-border">
+                    <h3 class="text-xl font-semibold golden-text mb-2">Founding Members</h3>
+                    <p class="text-gray-300 mb-4">(Ehrenmitglieder mit besonderen Rechten)</p>
+                    <p class="text-gray-200">Diese Mitglieder genießen exklusive Vorteile und sind die ursprünglichen Gründungsmitglieder des Clubs.</p>
+                </div>
+                <!-- Regular Members -->
+                <div class="bg-gray-700 p-6 rounded-lg shadow-inner">
+                    <h3 class="text-xl font-semibold golden-text mb-2">Regular Members</h3>
+                    <p class="text-gray-300 mb-4">(Normale Spieler mit Mitgliedsbeitrag)</p>
+                    <p class="text-gray-200">Unsere regulären Mitglieder haben vollen Zugang zu den Golfplätzen und Club-Annehmlichkeiten entsprechend ihres Mitgliedschaftstyps.</p>
+                </div>
+                <!-- Guest Players -->
+                <div class="bg-gray-700 p-6 rounded-lg shadow-inner border-l-4 golden-border">
+                    <h3 class="text-xl font-semibold golden-text mb-2">Guest Players</h3>
+                    <p class="text-gray-300 mb-4">(Dürfen nach Einladung oder Ticket spielen)</p>
+                    <p class="text-gray-200">Gäste sind herzlich willkommen, den Club nach Einladung oder mit einem Tagesticket zu besuchen und die Anlagen zu nutzen.</p>
+                </div>
                 <!-- Standard Membership -->
                 <div class="bg-gray-700 p-6 rounded-lg shadow-inner">
-                    <h3 class="text-xl font-semibold text-yellow-400 mb-2">Standard-Mitgliedschaft</h3>
+                    <h3 class="text-xl font-semibold golden-text mb-2">Standard-Mitgliedschaft</h3>
                     <p class="text-gray-300 mb-4">(nur Golfplatz-Zugang)</p>
                     <ul class="space-y-2 text-gray-200">
                         <li><strong>Monatlich:</strong> 170 $</li>
@@ -66,8 +98,8 @@
                 </div>
                 
                 <!-- VIP Membership -->
-                <div class="bg-gray-700 p-6 rounded-lg shadow-inner border-l-4 border-yellow-500">
-                    <h3 class="text-xl font-semibold text-yellow-400 mb-2">VIP-Mitgliedschaft</h3>
+                <div class="bg-gray-700 p-6 rounded-lg shadow-inner border-l-4 golden-border">
+                    <h3 class="text-xl font-semibold golden-text mb-2">VIP-Mitgliedschaft</h3>
                     <p class="text-gray-300 mb-4">(All-Inclusive, inkl. Clubhaus, Balkon & VIP-Social-Bereich, Gym uvm.)</p>
                     <ul class="space-y-2 text-gray-200">
                         <li><strong>Monatlich:</strong> 300 $</li>
@@ -157,6 +189,53 @@
             </div>
         </section>
 
+        <!-- Staff Section -->
+        <section id="staff" class="content-section bg-gray-800 p-8 rounded-xl shadow-lg mb-8">
+            <h2 class="text-2xl font-bold text-gray-100 mb-6">Unser Team</h2>
+            <p class="text-gray-300 mb-6">Wir sind stolz auf unser engagiertes Team, das dafür sorgt, dass Ihr Aufenthalt im Club unvergesslich wird.</p>
+            
+            <div class="space-y-8">
+                <!-- Management Level -->
+                <div>
+                    <h3 class="font-semibold text-xl mb-4 golden-text">Management-Ebene</h3>
+                    <ul class="space-y-4">
+                        <li class="p-4 bg-gray-700 rounded-md">
+                            <h4 class="font-bold text-gray-100">Club President (Owner)</h4>
+                            <p class="text-gray-400">Gunnar Olafson</p>
+                            <p class="text-gray-300 text-sm">Der Club President hat die höchste Leitung, trifft alle wesentlichen Entscheidungen und repräsentiert den Club nach außen.</p>
+                        </li>
+                        <li class="p-4 bg-gray-700 rounded-md">
+                            <h4 class="font-bold text-gray-100">Vice President / Club Director</h4>
+                            <p class="text-gray-400">Freie Stelle</p>
+                            <p class="text-gray-300 text-sm">Diese Position unterstützt den Präsidenten und ist für die tägliche Organisation und die Finanzen des Clubs zuständig.</p>
+                        </li>
+                        <li class="p-4 bg-gray-700 rounded-md">
+                            <h4 class="font-bold text-gray-100">Operations Manager</h4>
+                            <p class="text-gray-400">Freie Stelle</p>
+                            <p class="text-gray-300 text-sm">Der Operations Manager kümmert sich um die Terminplanung und die Koordination von Turnieren und anderen Veranstaltungen.</p>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service & Clubhouse -->
+                <div>
+                    <h3 class="font-semibold text-xl mb-4 golden-text">Service & Clubhaus</h3>
+                    <ul class="space-y-4">
+                        <li class="p-4 bg-gray-700 rounded-md">
+                            <h4 class="font-bold text-gray-100">Hospitality Manager</h4>
+                            <p class="text-gray-400">Freie Stelle</p>
+                            <p class="text-gray-300 text-sm">Verantwortlich für das Restaurant, die Bar und alle Events im Clubhaus, um eine erstklassige Erfahrung zu gewährleisten.</p>
+                        </li>
+                        <li class="p-4 bg-gray-700 rounded-md">
+                            <h4 class="font-bold text-gray-100">Bartender / Waitstaff</h4>
+                            <p class="text-gray-400">Freie Stellen</p>
+                            <p class="text-gray-300 text-sm">Unser Servicepersonal steht bereit, um Sie mit Speisen und Getränken zu verwöhnen.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
         <!-- Contact Section -->
         <section id="kontakt" class="content-section bg-gray-800 p-8 rounded-xl shadow-lg mb-8">
             <h2 class="text-2xl font-bold text-gray-100 mb-6">Kontaktieren Sie uns</h2>
@@ -165,24 +244,24 @@
             <form class="space-y-4">
                 <div>
                     <label for="name" class="block text-sm font-medium text-gray-300">Name</label>
-                    <input type="text" id="name" name="name" class="mt-1 block w-full rounded-md border-gray-600 bg-gray-900 text-white shadow-sm focus:border-yellow-500 focus:ring focus:ring-yellow-500 focus:ring-opacity-50">
+                    <input type="text" id="name" name="name" class="mt-1 block w-full rounded-md border-gray-600 bg-gray-900 text-white shadow-sm focus:golden-border focus:ring focus:ring-yellow-500 focus:ring-opacity-50">
                 </div>
                 <div>
                     <label for="email" class="block text-sm font-medium text-gray-300">E-Mail</label>
-                    <input type="email" id="email" name="email" class="mt-1 block w-full rounded-md border-gray-600 bg-gray-900 text-white shadow-sm focus:border-yellow-500 focus:ring focus:ring-yellow-500 focus:ring-opacity-50">
+                    <input type="email" id="email" name="email" class="mt-1 block w-full rounded-md border-gray-600 bg-gray-900 text-white shadow-sm focus:golden-border focus:ring focus:ring-yellow-500 focus:ring-opacity-50">
                 </div>
                 <div>
                     <label for="message" class="block text-sm font-medium text-gray-300">Ihre Nachricht</label>
-                    <textarea id="message" name="message" rows="4" class="mt-1 block w-full rounded-md border-gray-600 bg-gray-900 text-white shadow-sm focus:border-yellow-500 focus:ring focus:ring-yellow-500 focus:ring-opacity-50"></textarea>
+                    <textarea id="message" name="message" rows="4" class="mt-1 block w-full rounded-md border-gray-600 bg-gray-900 text-white shadow-sm focus:golden-border focus:ring focus:ring-yellow-500 focus:ring-opacity-50"></textarea>
                 </div>
-                <button type="submit" class="w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-black bg-yellow-500 hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 transition-colors duration-300">
+                <button type="submit" class="w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-black golden-bg hover:golden-hover focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 transition-colors duration-300">
                     Senden
                 </button>
             </form>
             
             <div class="mt-6 text-center text-gray-300">
                 <p>Oder kontaktieren Sie uns direkt:</p>
-                <p class="font-semibold">E-Mail: <a href="mailto:info@lsgolfclub.com" class="text-yellow-400 hover:underline">info@lsgolfclub.com</a></p>
+                <p class="font-semibold">E-Mail: <a href="mailto:info@lsgolfclub.com" class="golden-text hover:underline">info@lsgolfclub.com</a></p>
                 <p class="font-semibold">Telefon: +1 (555) 123-4567</p>
             </div>
         </section>
@@ -204,7 +283,7 @@
                     section.classList.remove('active');
                 });
                 navLinks.forEach(link => {
-                    link.classList.remove('font-bold', 'text-yellow-400');
+                    link.classList.remove('font-bold', 'golden-text');
                     link.classList.add('text-gray-300');
                 });
 
@@ -216,7 +295,7 @@
                 }
                 if (targetLink) {
                     targetLink.classList.remove('text-gray-300');
-                    targetLink.classList.add('font-bold', 'text-yellow-400');
+                    targetLink.classList.add('font-bold', 'golden-text');
                 }
             };
 
