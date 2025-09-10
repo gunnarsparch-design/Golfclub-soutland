@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Los Santos Golf Club</title>
+    <!-- Tailwind CSS CDN für schnelles Styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+        /* Eigene Styles für einheitliche Farben und Übergänge */
         body {
             font-family: 'Inter', sans-serif;
             background-color: #1a1a1a;
@@ -20,7 +22,7 @@
             opacity: 1;
         }
         .golden-text {
-            color: #d4af37; /* Ein sattes Gold */
+            color: #d4af37;
         }
         .golden-border {
             border-color: #d4af37;
@@ -38,13 +40,14 @@
     <!-- Kopfzeile und Navigation -->
     <header class="w-full bg-gray-800 shadow-lg rounded-xl mt-4 max-w-6xl mx-auto p-4 flex flex-col md:flex-row justify-between items-center z-10">
         <div class="flex items-center space-x-2">
-            <img src="GOLFLOGO.png" alt="Los Santos Golf Club Logo" class="w-12 h-12 rounded-full">
+            <!-- Platzhalter-Bild für das Logo -->
+            <img src="https://placehold.co/48x48/d4af37/ffffff?text=LSGC" alt="Los Santos Golf Club Logo" class="w-12 h-12 rounded-full">
             <h1 class="text-3xl font-bold golden-text">
                 <a href="#willkommen" class="hover:golden-text transition-colors duration-300">Los Santos Golf Club</a>
             </h1>
         </div>
         <nav class="mt-4 md:mt-0 flex-grow flex justify-end">
-            <ul class="flex space-x-4 items-center">
+            <ul class="flex space-x-4 items-center flex-wrap justify-center md:justify-end">
                 <li><a href="#willkommen" data-target="willkommen" class="nav-link text-gray-300 hover:golden-text transition-colors duration-300">Startseite</a></li>
                 <li><a href="#mitgliedschaft" data-target="mitgliedschaft" class="nav-link text-gray-300 hover:golden-text transition-colors duration-300">Zugang & Mitgliedschaft</a></li>
                 <li><a href="#hausordnung" data-target="hausordnung" class="nav-link text-gray-300 hover:golden-text transition-colors duration-300">Hausordnung</a></li>
@@ -64,12 +67,12 @@
             <p class="text-gray-300 mb-6">
                 Entdecken Sie unser erstklassiges Cluberlebnis mit atemberaubenden Plätzen und exklusiven Annehmlichkeiten.
             </p>
-            <!-- Image gallery -->
+            <!-- Bildgalerie mit Platzhaltern -->
             <div class="flex flex-col items-center space-y-8 mt-6">
-                <img src="reception.png" alt="Empfangsbereich des Los Santos Golf Clubs" class="rounded-lg shadow-md w-full h-auto object-cover">
-                <img src="VIP1.png" alt="VIP-Bereich des Clubs" class="rounded-lg shadow-md w-full h-auto object-cover">
-                <img src="resturant1.png" alt="Restaurant des Clubs" class="rounded-lg shadow-md w-full h-auto object-cover">
-                <img src="GYM1.png" alt="Fitnessraum des Clubs" class="rounded-lg shadow-md w-full h-auto object-cover">
+                <img src="https://placehold.co/1024x576/34495e/ffffff?text=Empfang" alt="Empfangsbereich des Los Santos Golf Clubs" class="rounded-lg shadow-md w-full h-auto object-cover">
+                <img src="https://placehold.co/1024x576/4a4a4a/ffffff?text=VIP+Lounge" alt="VIP-Bereich des Clubs" class="rounded-lg shadow-md w-full h-auto object-cover">
+                <img src="https://placehold.co/1024x576/606060/ffffff?text=Restaurant" alt="Restaurant des Clubs" class="rounded-lg shadow-md w-full h-auto object-cover">
+                <img src="https://placehold.co/1024x576/757575/ffffff?text=Fitnessraum" alt="Fitnessraum des Clubs" class="rounded-lg shadow-md w-full h-auto object-cover">
             </div>
         </section>
 
@@ -122,10 +125,10 @@
             <div class="mt-8">
                 <h3 class="text-xl font-semibold text-gray-100 mb-4">Zusatzleistungen für Tagesgäste oder Standard-Mitglieder</h3>
                 <ul class="space-y-2 text-gray-200 list-disc list-inside">
-                    <li>**Getränke-Paket:** Preis pro Person nach Auswahl.</li>
-                    <li>**Zugang Dachterrasse / exklusive Bereiche:** gegen Aufpreis pro Person.</li>
-                    <li>**Extras & Sonderrechte:** werden individuell durch das Management festgelegt.</li>
-                    <li>**Events:** werden extra gebucht.</li>
+                    <li><strong>Getränke-Paket:</strong> Preis pro Person nach Auswahl.</li>
+                    <li><strong>Zugang Dachterrasse / exklusive Bereiche:</strong> gegen Aufpreis pro Person.</li>
+                    <li><strong>Extras & Sonderrechte:</strong> werden individuell durch das Management festgelegt.</li>
+                    <li><strong>Events:</strong> werden extra gebucht.</li>
                 </ul>
             </div>
         </section>
@@ -139,9 +142,9 @@
                 <div>
                     <h3 class="font-semibold text-xl mb-2 text-gray-100">2. Kleiderordnung</h3>
                     <ul class="list-disc list-inside space-y-1">
-                        <li>**2.1 Alltagsspiel:** Legere, saubere Kleidung ist ausreichend.</li>
-                        <li>**2.2 Events & Turniere:** Schicke oder formelle Kleidung (z. B. Poloshirts, Kleider, Jacket).</li>
-                        <li>**2.3 Clubhaus Restaurant/Bar:** Keine Masken, Helme oder zu lässige Kleidung (z. B. Badebekleidung).</li>
+                        <li><strong>2.1 Alltagsspiel:</strong> Legere, saubere Kleidung ist ausreichend.</li>
+                        <li><strong>2.2 Events & Turniere:</strong> Schicke oder formelle Kleidung (z. B. Poloshirts, Kleider, Jacket).</li>
+                        <li><strong>2.3 Clubhaus Restaurant/Bar:</strong> Keine Masken, Helme oder zu lässige Kleidung (z. B. Badebekleidung).</li>
                     </ul>
                 </div>
                 
@@ -149,9 +152,9 @@
                 <div>
                     <h3 class="font-semibold text-xl mb-2 text-gray-100">3. Verhalten & Etikette</h3>
                     <ul class="list-disc list-inside space-y-1">
-                        <li>**3.1** Respektvoller Umgang mit Mitarbeitern, Mitgliedern und Gästen.</li>
-                        <li>**3.2** Kein störendes Verhalten (Trolling, rücksichtsloses Fahren auf dem Rasen).</li>
-                        <li>**3.3** Das Clubhaus ist ein entspannter sozialer Ort – keine Waffen oder illegalen Aktivitäten.</li>
+                        <li><strong>3.1</strong> Respektvoller Umgang mit Mitarbeitern, Mitgliedern und Gästen.</li>
+                        <li><strong>3.2</strong> Kein störendes Verhalten (Trolling, rücksichtsloses Fahren auf dem Rasen).</li>
+                        <li><strong>3.3</strong> Das Clubhaus ist ein entspannter sozialer Ort – keine Waffen oder illegalen Aktivitäten.</li>
                     </ul>
                 </div>
 
@@ -159,9 +162,9 @@
                 <div>
                     <h3 class="font-semibold text-xl mb-2 text-gray-100">4. Spielregeln</h3>
                     <ul class="list-disc list-inside space-y-1">
-                        <li>**4.1** Fair spielen und die Reihenfolge einhalten.</li>
-                        <li>**4.2** Andere Gruppen auf dem Platz nicht stören.</li>
-                        <li>**4.3** Golfcarts nur auf Wegen oder Grasflächen fahren – nicht ins Wasser oder ins Clubhaus.</li>
+                        <li><strong>4.1</strong> Fair spielen und die Reihenfolge einhalten.</li>
+                        <li><strong>4.2</strong> Andere Gruppen auf dem Platz nicht stören.</li>
+                        <li><strong>4.3</strong> Golfcarts nur auf Wegen oder Grasflächen fahren – nicht ins Wasser oder ins Clubhaus.</li>
                     </ul>
                 </div>
 
@@ -169,10 +172,10 @@
                 <div>
                     <h3 class="font-semibold text-xl mb-2 text-gray-100">5. Verhalten im Clubhaus</h3>
                     <ul class="list-disc list-inside space-y-1">
-                        <li>**5.1** Entspannt zurücklehnen, soziale Kontakte pflegen und das Ambiente genießen.</li>
-                        <li>**5.2** Bereiche können für Events reserviert sein (Bar, Speisesaal, Terrasse) – bitte respektieren.</li>
-                        <li>**5.3** VIP-Regelung: Zugang zum Balkon und zum exklusiven VIP-Social-Bereich ist nur VIP-Mitgliedern und deren Gästen vorbehalten.</li>
-                        <li>**5.4** Getränke und Snacks sind erhältlich – Personal ist stets freundlich zu behandeln.</li>
+                        <li><strong>5.1</strong> Entspannt zurücklehnen, soziale Kontakte pflegen und das Ambiente genießen.</li>
+                        <li><strong>5.2</strong> Bereiche können für Events reserviert sein (Bar, Speisesaal, Terrasse) – bitte respektieren.</li>
+                        <li><strong>5.3</strong> VIP-Regelung: Zugang zum Balkon und zum exklusiven VIP-Social-Bereich ist nur VIP-Mitgliedern und deren Gästen vorbehalten.</li>
+                        <li><strong>5.4</strong> Getränke und Snacks sind erhältlich – Personal ist stets freundlich zu behandeln.</li>
                     </ul>
                 </div>
                 
@@ -180,9 +183,9 @@
                 <div>
                     <h3 class="font-semibold text-xl mb-2 text-gray-100">6. Events & Turniere</h3>
                     <ul class="list-disc list-inside space-y-1">
-                        <li>**6.1** Offen für Mitglieder und Tagesgäste (außer bei „Members Only“- oder VIP-Events).</li>
-                        <li>**6.2** Anmeldung mindestens 15 Minuten vor Beginn.</li>
-                        <li>**6.3** Schiedsrichter/Organisatoren haben bei Streitfällen das letzte Wort.</li>
+                        <li><strong>6.1</strong> Offen für Mitglieder und Tagesgäste (außer bei „Members Only“- oder VIP-Events).</li>
+                        <li><strong>6.2</strong> Anmeldung mindestens 15 Minuten vor Beginn.</li>
+                        <li><strong>6.3</strong> Schiedsrichter/Organisatoren haben bei Streitfällen das letzte Wort.</li>
                     </ul>
                 </div>
                 
@@ -190,9 +193,9 @@
                 <div>
                     <h3 class="font-semibold text-xl mb-2 text-gray-100">7. Konsequenzen</h3>
                     <ul class="list-disc list-inside space-y-1">
-                        <li>**7.1** Verstoß: Freundliche Erinnerung.</li>
-                        <li>**7.2** Wiederholte Verstöße: Sperre des Tagespasses/Mitgliedschaft.</li>
-                        <li>**7.3** Schweres Fehlverhalten: Hausverbot.</li>
+                        <li><strong>7.1</strong> Verstoß: Freundliche Erinnerung.</li>
+                        <li><strong>7.2</strong> Wiederholte Verstöße: Sperre des Tagespasses/Mitgliedschaft.</li>
+                        <li><strong>7.3</strong> Schweres Fehlverhalten: Hausverbot.</li>
                     </ul>
                 </div>
 
@@ -252,12 +255,12 @@
             <p class="text-gray-300 text-lg mb-4">
                 Wählen Sie Ihre gewünschte Mitgliedschaftsoption aus und füllen Sie das Formular aus, um den Antragsprozess zu starten.
             </p>
-            <form class="space-y-6 max-w-xl mx-auto text-left">
+            <form class="space-y-6 max-w-xl mx-auto text-left" onsubmit="event.preventDefault(); showBookingConfirmation();">
                 <!-- Mitgliedschaftstyp-Auswahl -->
                 <div class="space-y-4">
                     <label class="block text-gray-300">Wählen Sie Ihren Mitgliedschaftstyp</label>
                     <div class="bg-gray-700 rounded-md p-4 flex items-center space-x-3 cursor-pointer">
-                        <input type="radio" id="standard" name="membership" value="standard" class="form-radio text-yellow-500 bg-gray-800 border-gray-600 focus:ring-yellow-500">
+                        <input type="radio" id="standard" name="membership" value="standard" class="form-radio text-yellow-500 bg-gray-800 border-gray-600 focus:ring-yellow-500" required>
                         <label for="standard" class="text-gray-100 flex-grow">Standard-Mitgliedschaft <span class="text-gray-400">(170 $/Monat)</span></label>
                     </div>
                     <div class="bg-gray-700 rounded-md p-4 flex items-center space-x-3 cursor-pointer">
@@ -272,11 +275,11 @@
                     <div class="space-y-4">
                         <div>
                             <label for="name" class="block text-sm font-medium text-gray-300">Name</label>
-                            <input type="text" id="name" name="name" class="mt-1 block w-full rounded-md border-gray-600 bg-gray-900 text-white shadow-sm focus:golden-border focus:ring focus:ring-yellow-500 focus:ring-opacity-50">
+                            <input type="text" id="name" name="name" class="mt-1 block w-full rounded-md border-gray-600 bg-gray-900 text-white shadow-sm focus:golden-border focus:ring focus:ring-yellow-500 focus:ring-opacity-50" required>
                         </div>
                         <div>
                             <label for="email" class="block text-sm font-medium text-gray-300">E-Mail</label>
-                            <input type="email" id="email" name="email" class="mt-1 block w-full rounded-md border-gray-600 bg-gray-900 text-white shadow-sm focus:golden-border focus:ring focus:ring-yellow-500 focus:ring-opacity-50">
+                            <input type="email" id="email" name="email" class="mt-1 block w-full rounded-md border-gray-600 bg-gray-900 text-white shadow-sm focus:golden-border focus:ring focus:ring-yellow-500 focus:ring-opacity-50" required>
                         </div>
                     </div>
                 </div>
@@ -294,13 +297,24 @@
                 Für Anfragen zu Mitgliedschaften, Firmen- oder Organisationsbuchungen, kontaktiert uns bitte direkt auf Discord.
             </p>
             <p class="text-gray-300 mb-6">
-                Sucht einfach nach unserem **Golf Club** im Discord-Kanal **"Southland | Firmen & Organisationen"**.
+                Sucht einfach nach unserem <strong>Golf Club</strong> im Discord-Kanal <strong>"Southland | Firmen & Organisationen"</strong>.
             </p>
             <div class="flex justify-center mt-8">
-                <img src="image_f8fee1.png" alt="Discord-Server-Kanal 'Southland | Firmen & Organisationen'" class="rounded-lg shadow-md max-w-full h-auto">
+                <!-- Platzhalter-Bild für den Discord-Kanal -->
+                <img src="https://placehold.co/600x400/1e1e1e/ffffff?text=Discord+Kanal" alt="Discord-Server-Kanal 'Southland | Firmen & Organisationen'" class="rounded-lg shadow-md max-w-full h-auto">
             </div>
         </section>
 
+        <!-- Modaler Dialog für die Bestätigung (als Ersatz für alert()) -->
+        <div id="confirmation-modal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden">
+            <div class="bg-gray-800 p-8 rounded-lg shadow-xl text-center max-w-sm mx-4">
+                <h3 class="text-xl font-bold golden-text mb-4">Antrag gesendet!</h3>
+                <p class="text-gray-300 mb-6">Ihr Antrag wurde erfolgreich übermittelt. Wir werden Sie per E-Mail kontaktieren, um die nächsten Schritte zu besprechen.</p>
+                <button onclick="closeModal()" class="w-full py-2 px-4 rounded-md shadow-sm text-sm font-medium text-black golden-bg hover:golden-hover focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 transition-colors duration-300">
+                    OK
+                </button>
+            </div>
+        </div>
     </main>
     
     <!-- Fußzeile -->
@@ -309,9 +323,21 @@
     </footer>
 
     <script>
+        // JavaScript für die Navigation und das Formular
         document.addEventListener('DOMContentLoaded', () => {
             const sections = document.querySelectorAll('.content-section');
             const navLinks = document.querySelectorAll('.nav-link');
+            const modal = document.getElementById('confirmation-modal');
+
+            // Funktion zum Anzeigen des modalen Dialogs
+            window.showBookingConfirmation = () => {
+                modal.classList.remove('hidden');
+            };
+
+            // Funktion zum Schließen des modalen Dialogs
+            window.closeModal = () => {
+                modal.classList.add('hidden');
+            };
 
             const showSection = (targetId) => {
                 sections.forEach(section => {
