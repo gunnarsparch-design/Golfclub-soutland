@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Santos Golf Club</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center">
+
+    <!-- Header and Navigation -->
+    <header class="w-full bg-white shadow-lg rounded-xl mt-4 max-w-6xl mx-auto p-4 flex flex-col md:flex-row justify-between items-center z-10">
+        <h1 class="text-3xl font-bold text-green-800">
+            <a href="#willkommen" class="hover:text-green-600 transition-colors duration-300">Los Santos Golf Club</a>
+        </h1>
+        <nav class="mt-4 md:mt-0">
+            <ul class="flex space-x-4">
+                <li><a href="#mitgliedschaft" class="text-gray-600 hover:text-green-800 transition-colors duration-300">Zugang & Mitgliedschaft</a></li>
+                <li><a href="#hausordnung" class="text-gray-600 hover:text-green-800 transition-colors duration-300">Hausordnung</a></li>
+                <li><a href="#kontakt" class="text-gray-600 hover:text-green-800 transition-colors duration-300">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="w-full max-w-6xl mx-auto p-6 md:p-8 mt-6">
+
+        <!-- Welcome Section (Home) -->
+        <section id="willkommen" class="bg-white p-8 rounded-xl shadow-lg mb-8 text-center">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Willkommen im Los Santos Golf Club!</h2>
+            <p class="text-gray-600 mb-6">
+                Entdecken Sie unser erstklassiges Cluberlebnis mit atemberaubenden Plätzen und exklusiven Annehmlichkeiten.
+            </p>
+            <img src="https://placehold.co/1200x600/08583B/ffffff?text=Reception+Area" alt="Reception of the Los Santos Golf Club" class="rounded-lg shadow-md w-full">
+        </section>
+
+        <!-- Access & Membership Section -->
+        <section id="mitgliedschaft" class="bg-white p-8 rounded-xl shadow-lg mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Zugang & Mitgliedschaft</h2>
+            
+            <!-- Membership Options -->
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Standard Membership -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-inner">
+                    <h3 class="text-xl font-semibold text-green-700 mb-2">Standard-Mitgliedschaft</h3>
+                    <p class="text-gray-600 mb-4">(nur Golfplatz-Zugang)</p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li><strong>Monatlich:</strong> 170 $</li>
+                        <li><strong>Jährlich:</strong> 1.800 $</li>
+                    </ul>
+                </div>
+                
+                <!-- VIP Membership -->
+                <div class="bg-green-50 p-6 rounded-lg shadow-inner border-l-4 border-green-500">
+                    <h3 class="text-xl font-semibold text-green-700 mb-2">VIP-Mitgliedschaft</h3>
+                    <p class="text-gray-600 mb-4">(All-Inclusive, inkl. Clubhaus, Balkon & VIP-Social-Bereich, Gym uvm.)</p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li><strong>Monatlich:</strong> 300 $</li>
+                        <li><strong>Jährlich:</strong> 3.500 $</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Additional Services -->
+            <div class="mt-8">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Zusatzleistungen für Tagesgäste oder Standard-Mitglieder</h3>
+                <ul class="space-y-2 text-gray-700 list-disc list-inside">
+                    <li>**Getränke-Paket:** Preis pro Person nach Auswahl.</li>
+                    <li>**Zugang Dachterrasse / exklusive Bereiche:** gegen Aufpreis pro Person.</li>
+                    <li>**Extras & Sonderrechte:** werden individuell durch das Management festgelegt.</li>
+                    <li>**Events:** werden extra gebucht.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Rules Section -->
+        <section id="hausordnung" class="bg-white p-8 rounded-xl shadow-lg mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Hausordnung</h2>
+            
+            <div class="space-y-6 text-gray-700">
+                <!-- Dress Code -->
+                <div>
+                    <h3 class="font-semibold text-xl mb-2 text-gray-800">2. Dresscode</h3>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>**2.1 Alltagsspiel:** Legere, saubere Kleidung ist ausreichend.</li>
+                        <li>**2.2 Events & Turniere:** Schicke oder formelle Kleidung (z. B. Poloshirts, Kleider, Jacket).</li>
+                        <li>**2.3 Clubhaus Restaurant/Bar:** Keine Masken, Helme oder zu lässige Kleidung (z. B. Badebekleidung).</li>
+                    </ul>
+                </div>
+                
+                <!-- Behavior & Etiquette -->
+                <div>
+                    <h3 class="font-semibold text-xl mb-2 text-gray-800">3. Verhalten & Etikette</h3>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>**3.1** Respektvoller Umgang mit Mitarbeitern, Mitgliedern und Gästen.</li>
+                        <li>**3.2** Kein störendes Verhalten (Trolling, rücksichtsloses Fahren auf dem Rasen).</li>
+                        <li>**3.3** Das Clubhaus ist ein entspannter sozialer Ort – keine Waffen oder illegale Aktivitäten.</li>
+                    </ul>
+                </div>
+
+                <!-- Game Rules -->
+                <div>
+                    <h3 class="font-semibold text-xl mb-2 text-gray-800">4. Spielregeln</h3>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>**4.1** Fair spielen und die Reihenfolge einhalten.</li>
+                        <li>**4.2** Andere Gruppen auf dem Platz nicht stören.</li>
+                        <li>**4.3** Golfcarts nur auf Wegen oder Grasflächen fahren – nicht ins Wasser oder ins Clubhaus.</li>
+                    </ul>
+                </div>
+
+                <!-- Clubhouse Behavior -->
+                <div>
+                    <h3 class="font-semibold text-xl mb-2 text-gray-800">5. Verhalten im Clubhaus</h3>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>**5.1** Entspannt zurücklehnen, soziale Kontakte pflegen und das Ambiente genießen.</li>
+                        <li>**5.2** Bereiche können für Events reserviert sein (Bar, Speisesaal, Terrasse) – bitte respektieren.</li>
+                        <li>**5.3** VIP-Regelung: Zugang zum Balkon und zum exklusiven VIP-Social-Bereich ist nur VIP-Mitgliedern und deren Gästen vorbehalten.</li>
+                        <li>**5.4** Getränke und Snacks sind erhältlich – Personal ist stets freundlich zu behandeln.</li>
+                    </ul>
+                </div>
+                
+                <!-- Events & Tournaments -->
+                <div>
+                    <h3 class="font-semibold text-xl mb-2 text-gray-800">6. Events & Turniere</h3>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>**6.1** Offen für Mitglieder und Tagesgäste (außer bei „Members Only“- oder VIP-Events).</li>
+                        <li>**6.2** Anmeldung mindestens 15 Minuten vor Beginn.</li>
+                        <li>**6.3** Schiedsrichter/Organisatoren haben bei Streitfällen das letzte Wort.</li>
+                    </ul>
+                </div>
+                
+                <!-- Consequences -->
+                <div>
+                    <h3 class="font-semibold text-xl mb-2 text-gray-800">7. Konsequenzen</h3>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>**7.1** Verstoß: Freundliche Erinnerung.</li>
+                        <li>**7.2** Wiederholte Verstöße: Sperre des Tagespasses/Mitgliedschaft.</li>
+                        <li>**7.3** Schweres Fehlverhalten: Hausverbot.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="kontakt" class="bg-white p-8 rounded-xl shadow-lg mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Kontaktieren Sie uns</h2>
+            <p class="text-gray-600 mb-4">Haben Sie Fragen oder möchten Sie ein Event buchen? Füllen Sie das folgende Formular aus und wir melden uns so schnell wie möglich bei Ihnen.</p>
+            
+            <form class="space-y-4">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                    <input type="text" id="name" name="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring focus:ring-green-500 focus:ring-opacity-50">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">E-Mail</label>
+                    <input type="email" id="email" name="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring focus:ring-green-500 focus:ring-opacity-50">
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700">Ihre Nachricht</label>
+                    <textarea id="message" name="message" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring focus:ring-green-500 focus:ring-opacity-50"></textarea>
+                </div>
+                <button type="submit" class="w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition-colors duration-300">
+                    Senden
+                </button>
+            </form>
+            
+            <div class="mt-6 text-center text-gray-600">
+                <p>Oder kontaktieren Sie uns direkt:</p>
+                <p class="font-semibold">E-Mail: <a href="mailto:info@lsgolfclub.com" class="text-green-600 hover:underline">info@lsgolfclub.com</a></p>
+                <p class="font-semibold">Telefon: +1 (555) 123-4567</p>
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- Footer -->
+    <footer class="w-full bg-white shadow-inner rounded-xl mt-8 max-w-6xl mx-auto p-4 text-center text-gray-500 text-sm">
+        <p>&copy; 2024 Los Santos Golf Club. Alle Rechte vorbehalten.</p>
+    </footer>
+
+</body>
+</html>
