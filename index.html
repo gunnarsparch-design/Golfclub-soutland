@@ -40,8 +40,8 @@
     <!-- Kopfzeile und Navigation -->
     <header class="w-full bg-gray-800 shadow-lg rounded-xl mt-4 max-w-6xl mx-auto p-4 flex flex-col md:flex-row justify-between items-center z-10">
         <div class="flex items-center space-x-2">
-            <!-- Platzhalter-Bild für das Logo -->
-            <img src="https://placehold.co/48x48/d4af37/ffffff?text=LSGC" alt="Los Santos Golf Club Logo" class="w-12 h-12 rounded-full">
+            <!-- Logo des Los Santos Golf Clubs -->
+            <img src="GOLFLOGO.jpg" alt="Los Santos Golf Club Logo" class="w-12 h-12 rounded-full">
             <h1 class="text-3xl font-bold golden-text">
                 <a href="#willkommen" class="hover:golden-text transition-colors duration-300">Los Santos Golf Club</a>
             </h1>
@@ -69,10 +69,10 @@
             </p>
             <!-- Bildgalerie mit Platzhaltern -->
             <div class="flex flex-col items-center space-y-8 mt-6">
-                <img src="https://placehold.co/1024x576/34495e/ffffff?text=Empfang" alt="Empfangsbereich des Los Santos Golf Clubs" class="rounded-lg shadow-md w-full h-auto object-cover">
-                <img src="https://placehold.co/1024x576/4a4a4a/ffffff?text=VIP+Lounge" alt="VIP-Bereich des Clubs" class="rounded-lg shadow-md w-full h-auto object-cover">
-                <img src="https://placehold.co/1024x576/606060/ffffff?text=Restaurant" alt="Restaurant des Clubs" class="rounded-lg shadow-md w-full h-auto object-cover">
-                <img src="https://placehold.co/1024x576/757575/ffffff?text=Fitnessraum" alt="Fitnessraum des Clubs" class="rounded-lg shadow-md w-full h-auto object-cover">
+                <img src="Reception.png" alt="Empfangsbereich des Los Santos Golf Clubs" class="rounded-lg shadow-md w-full h-auto object-cover">
+                <img src="VIP1.png" alt="VIP-Bereich des Clubs" class="rounded-lg shadow-md w-full h-auto object-cover">
+                <img src="resturant1.png" alt="Restaurant des Clubs" class="rounded-lg shadow-md w-full h-auto object-cover">
+                <img src="GYM1.png" alt="Fitnessraum des Clubs" class="rounded-lg shadow-md w-full h-auto object-cover">
             </div>
         </section>
 
@@ -255,39 +255,9 @@
             <p class="text-gray-300 text-lg mb-4">
                 Wählen Sie Ihre gewünschte Mitgliedschaftsoption aus und füllen Sie das Formular aus, um den Antragsprozess zu starten.
             </p>
-            <form class="space-y-6 max-w-xl mx-auto text-left" onsubmit="event.preventDefault(); showBookingConfirmation();">
-                <!-- Mitgliedschaftstyp-Auswahl -->
-                <div class="space-y-4">
-                    <label class="block text-gray-300">Wählen Sie Ihren Mitgliedschaftstyp</label>
-                    <div class="bg-gray-700 rounded-md p-4 flex items-center space-x-3 cursor-pointer">
-                        <input type="radio" id="standard" name="membership" value="standard" class="form-radio text-yellow-500 bg-gray-800 border-gray-600 focus:ring-yellow-500" required>
-                        <label for="standard" class="text-gray-100 flex-grow">Standard-Mitgliedschaft <span class="text-gray-400">(170 $/Monat)</span></label>
-                    </div>
-                    <div class="bg-gray-700 rounded-md p-4 flex items-center space-x-3 cursor-pointer">
-                        <input type="radio" id="vip" name="membership" value="vip" class="form-radio text-yellow-500 bg-gray-800 border-gray-600 focus:ring-yellow-500">
-                        <label for="vip" class="text-gray-100 flex-grow">VIP-Mitgliedschaft <span class="text-gray-400">(300 $/Monat)</span></label>
-                    </div>
-                </div>
-            
-                <!-- Ihre Daten -->
-                <div>
-                    <h3 class="text-xl font-semibold text-gray-100 mb-2">Ihre Daten</h3>
-                    <div class="space-y-4">
-                        <div>
-                            <label for="name" class="block text-sm font-medium text-gray-300">Name</label>
-                            <input type="text" id="name" name="name" class="mt-1 block w-full rounded-md border-gray-600 bg-gray-900 text-white shadow-sm focus:golden-border focus:ring focus:ring-yellow-500 focus:ring-opacity-50" required>
-                        </div>
-                        <div>
-                            <label for="email" class="block text-sm font-medium text-gray-300">E-Mail</label>
-                            <input type="email" id="email" name="email" class="mt-1 block w-full rounded-md border-gray-600 bg-gray-900 text-white shadow-sm focus:golden-border focus:ring focus:ring-yellow-500 focus:ring-opacity-50" required>
-                        </div>
-                    </div>
-                </div>
-            
-                <button type="submit" class="w-full py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-black golden-bg hover:golden-hover focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 transition-colors duration-300">
-                    Mitgliedschaft anfragen
-                </button>
-            </form>
+            <a href="https://docs.google.com/forms/d/1prt_idhOun07NKQFBY6eSB8I36MS1N16kxJfwRNToIg/preview" target="_blank" class="inline-block w-full max-w-xs py-3 px-6 rounded-md shadow-sm text-lg font-medium text-black golden-bg hover:golden-hover focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 transition-colors duration-300">
+                Mitgliedschaft buchen
+            </a>
         </section>
 
         <!-- Kontaktbereich -->
@@ -327,17 +297,6 @@
         document.addEventListener('DOMContentLoaded', () => {
             const sections = document.querySelectorAll('.content-section');
             const navLinks = document.querySelectorAll('.nav-link');
-            const modal = document.getElementById('confirmation-modal');
-
-            // Funktion zum Anzeigen des modalen Dialogs
-            window.showBookingConfirmation = () => {
-                modal.classList.remove('hidden');
-            };
-
-            // Funktion zum Schließen des modalen Dialogs
-            window.closeModal = () => {
-                modal.classList.add('hidden');
-            };
 
             const showSection = (targetId) => {
                 sections.forEach(section => {
